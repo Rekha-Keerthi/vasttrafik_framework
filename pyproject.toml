@@ -1,0 +1,55 @@
+[project]
+authors = [{name = "Rekha", email = "rekha.nkk5@gmail.com"}]
+description = "Automation testing of vasttrafik website."
+name = "vasttrafik_framework"
+requires-python = ">=3.11"
+version = "0.1.0"
+
+[tool.black]
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+)/
+'''
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+known_first_party = ["your_project_name"]
+known_third_party = ["requests", "numpy"] # Example
+line_length = 88
+profile = "black"
+skip = ["venv", ".venv", "build", "dist"]
+
+[tool.mypy]
+disallow_untyped_defs = true
+exclude = 'build|dist|\.venv'
+ignore_missing_imports = true
+python_version = "3.11"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pylint.main]
+fail-under = 8.0
+ignore = ["build", "dist", ".venv"]
+jobs = 1
+recursive = true
+
+[tool.pylint.messages_control]
+disable = [
+  "missing-docstring",
+  "invalid-name",
+  "too-few-public-methods",
+]
+
+[tool.codespell]
+ignore-words-list = "crate,te"
+skip = "venv,*.pyc,*.txt"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]

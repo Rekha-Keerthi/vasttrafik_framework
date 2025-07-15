@@ -1,0 +1,58 @@
+{
+    // Enable format on save
+    "editor.formatOnSave": true,
+    // Specify default formatter (Black via extension or path)
+    "python.formatting.provider": "black",
+    // isort and Black formatter settings
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "editor.rulers": [
+        88
+    ],
+    // Linting settings
+    "python.linting.enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    // Run all linters (Mypy, Pylint, Ruff)
+    "python.linting.lintOnSave": true,
+    // Spell checker
+    "cSpell.enabled": true,
+    "cSpell.language": "en,sv",
+    "cSpell.allowCompoundWords": true,
+    "cSpell.ignoreWords": [
+        "pyproject",
+        "mypy",
+        "isort",
+        "pylint",
+        "flake8",
+        "codespell",
+        "black",
+        "ruff",
+        "venv",
+    ],
+    // Files and folders to exclude
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
+        "**/.ruff_cache": true,
+        "**/.pytest_cache": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/.venv": true
+    },
+    "python.analysis.exclude": [
+        "**/build",
+        "**/dist",
+        "**/.venv"
+    ],
+    // tests
+    "python.testing.framework": "pytest",
+    "python.testing.pytestArgs": [
+        "testfiles"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

@@ -1,0 +1,22 @@
+setuptools >= 69.0.0
+
+Pytest===8.4.0
+pytest-html==4.1.1
+selenium==4.33.0
+
+# Clean code tools
+black>=24.0.0
+isort>=5.13.0
+mypy>=1.10.0
+pylint>=3.1.0
+codespell>=2.2.6
+flake8>=7.0.0
+flake8-bugbear>=24.2.6
+flake8-docstrings>=1.7.0
+mccabe>=0.7.0
+pycodestyle>=2.11.0
+pyflakes>=3.2.0
+
+# Install the project as an "editable" package
+# Editable mode allows to modify the code in the packages and use without pip installing again
+-e .
