@@ -56,7 +56,6 @@ Windows (CMD):
 venv\Scripts\activate.bat
 ```
 
-#Jenkins poll test
 Windows (PowerShell): 
 ```bash
 venv\Scripts\Activate.ps1
@@ -80,4 +79,4 @@ deactivate
 ```
 
 ### 🙋‍♂️ Contact
-Created by [Your Name] – your.email@example.com
+Created by [Rekha Danappala Basavarajappa] – rekha.nkk5@gmail.com
