@@ -32,7 +32,6 @@ class TestSearchTravel:
         log = home_page.getLogger()
         user_approved = home_page.cookie_container()
         log.info("User clicked on : %s  button", user_approved)
-        print("test code for build trigger")
 
     @pytest.mark.smoke
     @pytest.mark.parametrize("test_list_item", test_list)
@@ -63,8 +62,6 @@ class TestSearchTravel:
             test_list_item["from"], test_list_item["to"], "Välj avgångstid", (11, 4, 5)
         )
         print("Page title is:", home_page.getTitle())
-        print("test code to trigger build on code push")
-        print("Testing")
         time.sleep(5)
 
     @pytest.mark.smoke
