@@ -1,6 +1,6 @@
 # Vasttrafik Framework
 
-This project demonstrates a basic Python setup with virtual environment management and dependency installation using `requirements.txt`.
+This project is a unit testing framework developed using Python, Selenium, and Pytest to automate https://www.vasttrafik.se/ web application following Page Object pattern, data parameterization, fixture setup, html reporting, and logging.
 
 ## 📦 Features
 
@@ -21,8 +21,8 @@ Follow these steps to get the project up and running on your machine.
 Open your terminal and run:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Rekha-Keerthi/vasttrafik_framework.git
+cd vasttrafik_framework
 ```
 
 ### 🐍 2. Create a Virtual Environment
@@ -79,4 +79,4 @@ deactivate
 ```
 
 ### 🙋‍♂️ Contact
-Created by [Rekha Danappala Basavarajappa] – rekha.nkk5@gmail.com
+Created by Rekha Danappala Basavarajappa – rekha.nkk5@gmail.com
